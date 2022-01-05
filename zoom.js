@@ -1,20 +1,20 @@
 var zoomImg = function () {
-    // (A) CREATE EVIL IMAGE CLONE
+    // Creer une zoom
     var clone = this.cloneNode();
     clone.classList.remove("img-responsive");
   
-    // (B) PUT EVIL CLONE INTO LIGHTBOX
+    // Mise en place du lightbox
     var lb = document.getElementById("lb-img");
     lb.innerHTML = "";
     lb.appendChild(clone);
   
-    // (C) SHOW LIGHTBOX
+    // LIGHTBOX
     lb = document.getElementById("lb-back");
     lb.classList.add("show");
   };
   
   window.addEventListener("load", function(){
-    // (D) ATTACH ON CLICK EVENTS TO ALL .ZOOMD IMAGES
+    // Click Image pour Zommer
     var images = document.getElementsByClassName("img-responsive");
     if (images.length>0) {
       for (var img of images) {
@@ -22,7 +22,7 @@ var zoomImg = function () {
       }
     }
   
-    // (E) CLICK EVENT TO HIDE THE LIGHTBOX
+    // Click Image pour fermer
     document.getElementById("lb-back").addEventListener("click", function(){
       this.classList.remove("show");
     })

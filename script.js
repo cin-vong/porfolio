@@ -1,4 +1,4 @@
-// jQuery script to nav scroll to section
+// jQuery script pour navigation du scroll
 
 $(document).ready(function(){
     $('.nav li a').click(function() {
@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
   });
   
-  //jQuery script to page-scroll & animate fa-icon
+  //jQuery script pour scroller une page & animations des "fa-icon"
   
   $(document).ready(function() { 
     $('a.page-scroll').click(function() {  
