@@ -263,6 +263,7 @@ section h2.section-heading {
    text-align: center;
    background-clip: border-box;
    -webkit-box-shadow: none;
+   -ms-padding: 100px;
    box-shadow: none;
 
 }
@@ -281,7 +282,7 @@ section h2.section-heading {
 .portfolio-modal .close-modal {
    position: absolute;
    top: 25px;
-   right: 25px;
+   right: 10px;
    width: 75px;
    height: 75px;
    background-color: transparent;
